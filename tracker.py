@@ -8,14 +8,10 @@ for log in weekly_log:
 
 
 # Inside tracker.py after a conflict, Git inserts markers:
-
-<<<<<<< HEAD
 def assess_day(steps):
     return steps >= 10000
-=======
 def assess_day(steps, goal=10000):
     return steps >= goal
->>>>>>> feature/flexible-goal
 
 # HEAD = your current branch (main)
 # Everything between === and >>> = the incoming branch changes
